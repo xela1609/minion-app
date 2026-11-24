@@ -1,0 +1,24 @@
+# Plano para Render (Blueprint). Los valores marcados "sync: false" te los pide Render al crear
+# el servicio, y no se guardan en el código.
+services:
+  - type: web
+    name: mi-minion
+    runtime: docker
+    plan: free
+    region: frankfurt
+    healthCheckPath: /
+    envVars:
+      - key: GOOGLE_SCRIPT_URL
+        sync: false
+      - key: GOOGLE_SCRIPT_CLAVE
+        sync: false
+      - key: CHAT_API_URL
+        value: https://api.groq.com/openai/v1
+      - key: CHAT_API_KEY
+        sync: false
+      - key: CHAT_MODELO
+        value: openai/gpt-oss-20b
+      - key: CHAT_PERSONALIDAD_EXTRA
+        sync: false
+      - key: TZ
+        value: Europe/Madrid

@@ -1,0 +1,6 @@
+# Versiones probadas juntas. Con una FastAPI más reciente, el servidor web de Flet 1.0.3 no arranca.
+flet==1.0.3
+flet-web==1.0.3
+fastapi==0.128.0
+starlette==0.46.2
+uvicorn==0.54.0

@@ -1,0 +1,6 @@
+# NUNCA subir claves ni datos privados
+config_local.py
+__pycache__/
+*.pyc
+*.zip
+.env
